@@ -31,7 +31,12 @@ export default function () {
       let data = await resp.json()
 
       setLyricSp(false)
-      setLyric(data.lyrics)
+      if(data.lyrics === undefined) {
+        setLyric([])
+        setNotLyric(true)
+      } else {
+        setLyric(data.lyrics)
+      }
     } catch (err) {
       console.log(err)
       setNotLyric(true)

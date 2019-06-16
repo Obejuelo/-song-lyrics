@@ -24,7 +24,7 @@ legend {
 legend::before {
     position: absolute;
     content: '';
-    width: calc(120%);
+    width: calc(130%);
     display: block;
     background-color: #EB6864;
     height: 40px;
